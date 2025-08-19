@@ -70,14 +70,14 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
+1. **Write a SQL query  to retrieve all columns for sales made on 2022-11-05**:
 ```sql
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than or equal to 4 in the month of Nov-2022**:
 ```sql
 SELECT 
   *
@@ -90,7 +90,7 @@ WHERE
     quantity >= 4
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3. **Write a SQL query to calculate the total sales for each category**:
 ```sql
 SELECT 
     category,
@@ -100,7 +100,7 @@ FROM retail_sales
 GROUP BY 1
 ```
 
-4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
+4. **Write a SQL query to find all transactions where the total_sale is greater than 1000**:
 ```sql
 SELECT
     ROUND(AVG(age), 2) as avg_age
@@ -228,4 +228,5 @@ For more content on SQL, data analysis, and other data-related topics, make sure
 - **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
 
 Thank you for your support, and I look forward to connecting with you!
+
 
